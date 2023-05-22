@@ -7,11 +7,11 @@ services:
     restart: always
     ports:
       - "4567:4567/tcp"
-    environment:
-      - PAGE_FILE_DIR="/wiki"
+    #environment:
+        #- PAGE_FILE_DIR="/wiki"
         #- GOLLUM_BASE="/wiki"
     volumes:
       - ./config.rb:/etc/gollum/config.rb
       - ./wiki:/wiki
     command:
-      - "--config=/etc/gollum/config.rb --mathjax"
+      - "--config=/etc/gollum/config.rb --page-file-dir=/wiki --mathjax"
