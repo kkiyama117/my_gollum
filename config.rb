@@ -50,6 +50,7 @@
     # Equivalent to --base-path [PATH]
 
     #base_path: [PATH],
+    #base_path: '/wiki',
 
     #-----------------------------------------------------------------------------
     # Enable support for annotations using CriticMarkup.
@@ -125,6 +126,7 @@
     # Equivalent to --mathjax
 
     #mathjax: true,
+    mathjax: false,
 
     #-----------------------------------------------------------------------------
     # Specify path to a custom MathJax configuration.
@@ -140,6 +142,7 @@
     # Equivalent to --no-display-metadata
 
     #display_metadata: false,
+    display_metadata: true,
 
     #-----------------------------------------------------------------------------
     # Disable the feature of editing pages.
@@ -148,6 +151,7 @@
     # Equivalent to --no-edit
 
     #allow_editing: false,
+    allow_editing: false,
 
     #-----------------------------------------------------------------------------
     # Specify the subdirectory for all pages. If set, Gollum will only serve pages
@@ -157,6 +161,7 @@
     # Equivalent to --page-file-dir [PATH]
 
     #page_file_dir: [PATH],
+    #page_file_dir: '/wiki',
 
     #-----------------------------------------------------------------------------
     # Follow pages across renames in the History view.
