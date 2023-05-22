@@ -50,7 +50,7 @@
     # Equivalent to --base-path [PATH]
 
     #base_path: [PATH],
-    #base_path: '/wiki',
+    base_path: '/wiki',
 
     #-----------------------------------------------------------------------------
     # Enable support for annotations using CriticMarkup.
@@ -151,7 +151,7 @@
     # Equivalent to --no-edit
 
     #allow_editing: false,
-    allow_editing: false,
+    #allow_editing: false,
 
     #-----------------------------------------------------------------------------
     # Specify the subdirectory for all pages. If set, Gollum will only serve pages
@@ -188,6 +188,7 @@
     # Equivalent to --ref [REF]
 
     #ref: [REF],
+    ref: 'main',
 
     #-----------------------------------------------------------------------------
     # Use static assets.
