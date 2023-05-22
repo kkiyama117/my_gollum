@@ -1,0 +1,14 @@
+version: "3.7"
+
+services:
+  gollum:
+    image: gollumwiki/gollum:master
+    #build: ./root
+    restart: always
+    ports:
+      - "4567:4567/tcp"
+    volumes:
+      - ./config.rb:/etc/gollum/config.rb
+      - ./wikidata:/wiki
+    command:
+      - "--config=/etc/gollum/config.rb"
